@@ -1,0 +1,105 @@
+body{
+    background-color: #000;
+  }
+  .container{
+    position: relative;
+    height: 1000px;
+  }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+  @keyframes skew {
+    from {
+      transform: skewX(0deg);
+    } to {
+      transform: skewX(180deg);
+    }
+  }
+  @keyframes color {
+    
+    from {
+      background-color: grey;
+    } to {
+      background-color: lightyellow;
+    }
+  }
+
+  #ball1{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotate 0.5s linear infinite;
+  }
+
+  #ball1 span {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#fafad2,#8df2f2);
+      border-radius: 50%;
+  }
+
+    #ball1 span:nth-child(1){
+        filter: blur(5px);
+    }
+    #ball1 span:nth-child(2){
+        filter: blur(10px);
+    }
+    #ball1 span:nth-child(3){
+        filter: blur(20px);
+    }
+    #ball1 span:nth-child(4){
+        filter: blur(60px);
+    }
+
+
+  .container2{
+    position: relative;
+    height: 1000px;
+  }
+  
+  #ball{
+    position: absolute;
+    border:3px solid lightyellow;  
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: #800000;
+    border-radius: 50%;
+    display: inline-block;
+    /*animation: skew 10s linear infinite alternate; */
+  }
+  
+  h1{
+    text-align: center;
+    animation: neonsign infinite;
+  }
+  
+  a, h2, h3 {
+      text-align: center;
+      color: white;
+  }
+
+  a:visited {
+    text-align: center;
+    color: white;
+}
+a:hover{
+    color: lightblue
+}
+#canvasa{
+    color: black
+}
+ #canvasa:hover { 
+    color: lightblue
+}
+
